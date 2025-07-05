@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="vbox_signup" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.segera.sufeeds.signupcontroller">
+   <children>
+      <AnchorPane prefHeight="83.0" prefWidth="595.0" style="-fx-background-color: blue;">
+         <children>
+            <Label layoutX="242.0" layoutY="24.0" prefHeight="26.0" prefWidth="116.0" text="Sign Up" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="518.0" prefWidth="900.0" style="-fx-background-color: yellow;">
+         <children>
+            <TextField fx:id="adm_signup" layoutX="248.0" layoutY="44.0" promptText="Admn. No" />
+            <TextField fx:id="fname_signup" layoutX="248.0" layoutY="122.0" promptText="F.Name" />
+            <TextField fx:id="lname_signup" layoutX="248.0" layoutY="186.0" promptText="L.Name" />
+            <PasswordField fx:id="pass_signup" layoutX="248.0" layoutY="248.0" promptText="Pass" />
+            <Label layoutX="138.0" layoutY="48.0" text="Admission Number" />
+            <Label layoutX="175.0" layoutY="126.0" text="First Name" />
+            <Label layoutX="175.0" layoutY="190.0" text="Last Name" />
+            <Label layoutX="179.0" layoutY="252.0" text="Password" />
+            <Button fx:id="signup_signip" layoutX="297.0" layoutY="305.0" mnemonicParsing="false" onAction="#signUP" text="Sign up" />
+            <Button fx:id="login_signup" layoutX="418.0" layoutY="377.0" mnemonicParsing="false" onAction="#switchToLogin" text="Log in" />
+            <Label layoutX="234.0" layoutY="381.0" text="If you already have an account" />
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>
